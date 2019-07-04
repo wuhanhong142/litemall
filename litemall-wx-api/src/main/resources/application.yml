@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: db, core, wx
+  messages:
+    encoding: UTF-8
+
+server:
+  port: 8080
+
+logging:
+  level:
+    root:  INFO
+    org.springframework:  INFO
+    org.mybatis:  INFO
+    com.bestsoft.litemall.wx:  INFO
+    com.bestsoft.litemall:  INFO

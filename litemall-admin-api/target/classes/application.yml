@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active: db, core, admin
+  messages:
+    encoding: UTF-8
+
+server:
+  port: 8083
+logging:
+  level:
+    root:  INFO
+    org.springframework:  WARN
+    org.mybatis:  WARN
+    com.bestsoft.litemall.admin:  INFO
+    com.bestsoft.litemall.db.dao:  INFO
