@@ -100,4 +100,11 @@ public class LitemallUserService {
     public void deleteById(Integer id) {
         userMapper.logicalDeleteByPrimaryKey(id);
     }
+
+    public int bindBusiUser(Integer userId, String code) {
+        LitemallUser user = new LitemallUser();
+        user.setId(userId);
+        user.setInviteCode(code);
+        return userMapper.updateByPrimaryKeySelective(user);
+    }
 }

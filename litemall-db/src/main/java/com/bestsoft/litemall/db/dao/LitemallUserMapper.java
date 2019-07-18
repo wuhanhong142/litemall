@@ -1,9 +1,9 @@
 package com.bestsoft.litemall.db.dao;
 
-import java.util.List;
-import org.apache.ibatis.annotations.Param;
 import com.bestsoft.litemall.db.domain.LitemallUser;
 import com.bestsoft.litemall.db.domain.LitemallUserExample;
+import java.util.List;
+import org.apache.ibatis.annotations.Param;
 
 public interface LitemallUserMapper {
     /**

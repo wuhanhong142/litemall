@@ -4,14 +4,14 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 
 @ConfigurationProperties(prefix = "litemall.storage")
 public class StorageProperties {
-    private String active;
+    private String active = "local";
     private Local local;
     private Aliyun aliyun;
     private Tencent tencent;
     private Qiniu qiniu;
 
     public String getActive() {
-        return active;
+        return "local";
     }
 
     public void setActive(String active) {
